@@ -1,0 +1,14 @@
+<slide id="data_and_safety">
+  <background color="background"/>
+  <shape type="rect" x="0" y="0" width="1280" height="8" fill="accent"/>
+  <text id="safety-title" x="380" y="56" width="520" height="66" font="heading" size="38" color="primary" align="center"><p>Прогресс, безопасность и тестирование</p></text>
+  <image id="safety-vault" x="150" y="136" width="400" height="500" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/safety-vault-door-c8015bcea03f.jpg" fit="cover"/>
+  <image id="safety-tests" x="730" y="136" width="400" height="500" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/safety-test-sheet-01095eaf027b.jpg" fit="cover"/>
+  <shape type="rect" x="60" y="150" width="70" height="470" fill="#F1F6F8CC"/>
+  <shape type="rect" x="600" y="150" width="70" height="470" fill="#F1F6F8CC"/>
+  <text x="70" y="230" width="50" height="260" font="body" size="19" color="primary" writing-mode="vertical" align="center"><p>УЖЕ ЕСТЬ</p></text>
+  <text x="610" y="230" width="50" height="260" font="body" size="19" color="accent-text" writing-mode="vertical" align="center"><p>СЛЕДУЮЩИЙ ШАГ</p></text>
+  <text x="250" y="656" width="200" height="32" font="caption" size="17" color="primary" align="center"><p>Граница данных</p></text>
+  <text x="830" y="656" width="200" height="32" font="caption" size="17" color="accent-text" align="center"><p>Проверка контура</p></text>
+  <text x="60" y="680" width="1160" height="24" font="caption" size="15" color="secondary-text"><p>PostgreSQL/Supabase · bot_app без DELETE и DDL · RLS · receipts по update_id · 16 unit-тестов · 8 тестов прототипа</p></text>
+</slide>

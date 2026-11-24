@@ -1,0 +1,82 @@
+{
+  "id": "telegram-mwujszkj-611187ce",
+  "title": "Архитектура интерактивного детектива в Telegram",
+  "designType": "deck",
+  "resourceUri": "manus-resource://manus-slides/deck/telegram-mwujszkj-611187ce",
+  "widgetUri": "manus-widget://manus-slides/studio/deck/telegram-mwujszkj-611187ce",
+  "versionId": "v-mwujszte-d64e8200",
+  "projectDir": "D:\\projects\\christmas-advent-calendar-gta6\\manus-slides\\telegram-mwujszkj-611187ce",
+  "activeFile": "cover.xml",
+  "files": [],
+  "scaffolds": [],
+  "viewState": {
+    "mode": "preview",
+    "zoom": 1,
+    "slide_ids": [
+      "cover",
+      "player_flow",
+      "architecture",
+      "scenario_data",
+      "archive_states",
+      "case_08",
+      "data_and_safety",
+      "implementation_plan"
+    ],
+    "outline": [
+      {
+        "id": "cover",
+        "title": "Интерактивный детектив в Telegram",
+        "summary": "Архитектура игрового бота, архива улик и сценарного движка для проекта «12 дней до полуночи». [1 заглавный тезис и 1 подзаголовок]",
+        "state": "edit_pending"
+      },
+      {
+        "id": "player_flow",
+        "title": "Игровой цикл игрока",
+        "summary": "Путь от календарной выдачи дела через улики, подсказки и ответ к прогрессу и архиву. Указать команды /today, /archive, /progress и inline-кнопки. [4 этапа, каждый с коротким пояснением]",
+        "state": "edit_pending"
+      },
+      {
+        "id": "architecture",
+        "title": "Слои системы и поток обновления",
+        "summary": "Точная схема Telegram webhook → HTTP server → engine → PostgreSQL progress store → Supabase; outbound actions отправляются в Telegram API. Показать update_id deduplication и границы ответственности. [5 узлов и связи]",
+        "state": "edit_pending"
+      },
+      {
+        "id": "scenario_data",
+        "title": "Сценарная карта как данные",
+        "summary": "Структура Case: дата/условие выдачи, prompt, evidence, hints, answer validator, success/incorrect response, переход. Отдельно разделить игровой контент и пользовательское состояние. [2 слоя данных и 6 полей дела]",
+        "state": "edit_pending"
+      },
+      {
+        "id": "archive_states",
+        "title": "Архив: навигация и состояния",
+        "summary": "Показать меню архива, фильтр дел и просмотр материалов. Точная state-модель дела locked → available → solved и улики unseen → viewed; архив только повторно открывает доступное игроку. [2 state machine и 1 меню]",
+        "state": "edit_pending"
+      },
+      {
+        "id": "case_08",
+        "title": "Карта дела №08 · «Четыре минуты»",
+        "summary": "Полный пример: дата выдачи 27 декабря, улика H-3 с 23:42, камера отстаёт на 4 минуты, три ступени подсказок, строгая проверка HH:MM, ответ 23:46 и переход к делу №09. Отметить канонические ограничения уликой. [6 шагов и 3 подсказки]",
+        "state": "edit_pending"
+      },
+      {
+        "id": "data_and_safety",
+        "title": "Прогресс, безопасность и тестирование",
+        "summary": "Указать существующие элементы: PostgreSQL/Supabase, роль bot_app, RLS, receipts по update_id, unit-тесты и in-memory simulator. Отдельно указать проектируемое: state просмотренных улик и HTTP live integration test с mock Telegram и внешним rollback. [2 колонки: уже есть / следующий шаг]",
+        "state": "edit_pending"
+      },
+      {
+        "id": "implementation_plan",
+        "title": "Порядок реализации",
+        "summary": "Практичный план: описать данные улик, расширить движок и календарь, добавить архивные callback-кнопки и persistence, тесты и затем реальный HTTP/Supabase тест. [4 этапа с критерием готовности]",
+        "state": "edit_pending"
+      }
+    ],
+    "generate_mode": "pptx",
+    "isPptxSlides": true,
+    "deck_topic": "education",
+    "style_request": "Неоновая ночная атмосфера криминального расследования: Верде-Бей, порт, мокрый асфальт, архивные материалы дела. Чистая техническая подача, высококонтрастная типографика, кинематографичный, но читаемый стиль; без логотипов Grand Theft Auto и без брендинга Rockstar. Визуальные акценты — тёмно-синий, графит, холодный циан и редкие янтарные маркеры улик. Схемы архитектуры и состояния показывать точными нативными диаграммами, а не рисовать как иллюстрации."
+  },
+  "createdAt": "2026-11-24T10:24:55.315Z",
+  "updatedAt": "2026-11-24T10:24:55.767Z"
+}

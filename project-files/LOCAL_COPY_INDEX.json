@@ -1,0 +1,427 @@
+{
+  "created_at": "2026-11-24T10:00:17.411Z",
+  "note": "Historical task attachments copied locally; secret values and message text are not included.",
+  "files": [
+    {
+      "filename": "01_Паспорт_продукта.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/advent/01_Паспорт_продукта.md",
+      "version_uid": "66362b40-2682-47a8-9aab-f3abe56b9ed1",
+      "source_message_id": "0P7hxSWGMNcNiKgFCs9Vu2",
+      "local_path": "project-files/history/advent/01_Паспорт_продукта.md",
+      "bytes": 16830,
+      "sha256": "47ba902cfa546af4d02272a38dcdb8973826af0966c4053ddb846050c3a106ea"
+    },
+    {
+      "filename": "02_Лендинг_и_креативы.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/advent/02_Лендинг_и_креативы.md",
+      "version_uid": "99e27b6e-24aa-4568-a9c5-4e086ba164c0",
+      "source_message_id": "0P7hxSWGMNcNiKgFCs9Vu2",
+      "local_path": "project-files/history/advent/02_Лендинг_и_креативы.md",
+      "bytes": 18247,
+      "sha256": "1f81a492a52e516028e87d2cd14564f2fb18b8f9e22bd93701489de39c71e453"
+    },
+    {
+      "filename": "03_Сторибайбл_и_Дело_1.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/advent/03_Сторибайбл_и_Дело_1.md",
+      "version_uid": "f884bcac-b494-4edc-a7b7-2dd62952097d",
+      "source_message_id": "0P7hxSWGMNcNiKgFCs9Vu2",
+      "local_path": "project-files/history/advent/03_Сторибайбл_и_Дело_1.md",
+      "bytes": 20449,
+      "sha256": "c771bd018108fe6d771bd9b60335f9e611dbcc7b6602abc83fd008847f78ac26"
+    },
+    {
+      "filename": "Разбор_адвент_GTA6.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/advent/Разбор_адвент_GTA6.md",
+      "version_uid": "1b491741-cad5-4037-b152-2f7944626866",
+      "source_message_id": "poGWXbmkQ382y0VVRENUHv",
+      "local_path": "project-files/history/advent/Разбор_адвент_GTA6.md",
+      "bytes": 20646,
+      "sha256": "29be12751b964da900bb9e7a87d36b4838c9410658b5392d271beff5b20b6d0b"
+    },
+    {
+      "filename": "cover_poster.png",
+      "content_type": "image/png",
+      "original_path": "/home/ubuntu/advent/cover_poster.png",
+      "version_uid": "3e8da11f-802b-47b5-9d1d-4497f8cb9bec",
+      "source_message_id": "0P7hxSWGMNcNiKgFCs9Vu2",
+      "local_path": "project-files/history/advent/cover_poster.png",
+      "bytes": 6685688,
+      "sha256": "4daea7dbecc8ba651b1ac809bd3e45b96523bd15e22bded532cbd0a782930bbb"
+    },
+    {
+      "filename": "market_position.png",
+      "content_type": "image/png",
+      "original_path": "/home/ubuntu/advent/market_position.png",
+      "version_uid": "ac486d46-43b0-4006-acba-b724fe93b99a",
+      "source_message_id": "poGWXbmkQ382y0VVRENUHv",
+      "local_path": "project-files/history/advent/market_position.png",
+      "bytes": 179883,
+      "sha256": "28d3e3b479c02118ffca2401788fd201ac2de545efe5d09a2f592df5a2efa026"
+    },
+    {
+      "filename": "reels_cover.png",
+      "content_type": "image/png",
+      "original_path": "/home/ubuntu/advent/reels_cover.png",
+      "version_uid": "5ca0a194-29c7-4e3a-b1c2-1db0de1c9016",
+      "source_message_id": "0P7hxSWGMNcNiKgFCs9Vu2",
+      "local_path": "project-files/history/advent/reels_cover.png",
+      "bytes": 6233729,
+      "sha256": "e2034dcd427a2d46c872c274bf6e08e0804f0a528db0e991c90c19c24961642e"
+    },
+    {
+      "filename": "verde-bay-trailer.mp4",
+      "content_type": "video/mp4",
+      "original_path": "/home/ubuntu/advent/verde-bay-trailer.mp4",
+      "version_uid": "7473b615-b0bf-448d-be15-f0f8c31dd113",
+      "source_message_id": "pf3OiURlI44rtmYQALt4nS",
+      "local_path": "project-files/history/advent/verde-bay-trailer.mp4",
+      "bytes": 1895052,
+      "sha256": "fb3f85ac375fc444d2a0a9a4248dcf973e41ee357b194a8fd78a7619e509e4b2"
+    },
+    {
+      "filename": "midnight12-bot-security-setup.zip",
+      "content_type": "application/zip",
+      "original_path": "/home/ubuntu/midnight12-bot-security-setup.zip",
+      "version_uid": "77557730-c191-491f-9783-b86317e9ca9a",
+      "source_message_id": "CLKlYWjqoRWlvmIx5Guc87",
+      "local_path": "project-files/history/archives/midnight12-bot-security-setup.zip",
+      "bytes": 30827,
+      "sha256": "e8f2bdb5ee8aea7b0fa1fc8063b0ef5cb9ae0d2fb6ddeafcb990e77b3df45878"
+    },
+    {
+      "filename": "midnight12-bot-simulator.zip",
+      "content_type": "application/zip",
+      "original_path": "/home/ubuntu/midnight12-bot-simulator.zip",
+      "version_uid": "2c7d9265-2c07-4fa8-899d-5306f1f48ed1",
+      "source_message_id": "vU17NmsLl6vE6HyMrOxU2G",
+      "local_path": "project-files/history/archives/midnight12-bot-simulator.zip",
+      "bytes": 26936,
+      "sha256": "2f6d82047223cdc50546c8c55175a9826a99ba36b0d83c7f4bd5a0721f9a0ee5"
+    },
+    {
+      "filename": "midnight12-bot.zip",
+      "content_type": "application/zip",
+      "original_path": "/home/ubuntu/midnight12-bot.zip",
+      "version_uid": "f6a5b61c-f369-4a2a-93e0-8a530e8ea01e",
+      "source_message_id": "DgBq7hPM9nIvFmNumMFOP6",
+      "local_path": "project-files/history/archives/midnight12-bot.zip",
+      "bytes": 23507,
+      "sha256": "412675045025428380d48f0417236f1c6bf82cb82e98c60f3dc84ebb2480d157"
+    },
+    {
+      "filename": ".env.example",
+      "content_type": "application/octet-stream",
+      "original_path": "/home/ubuntu/midnight12/bot/.env.example",
+      "version_uid": "10a46eb3-db7f-4a87-897d-6eaf4d576b81",
+      "source_message_id": "CLKlYWjqoRWlvmIx5Guc87",
+      "local_path": "project-files/history/midnight12/bot/.env.example",
+      "bytes": 432,
+      "sha256": "daedf72423bdef9139aff332ccc1ac0741da3a0b886892f4b28314f349a76500"
+    },
+    {
+      "filename": "engine.mjs",
+      "content_type": "text/javascript; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/bot/engine.mjs",
+      "version_uid": "f0abbfd3-3b73-432d-af53-d32c9b86df18",
+      "source_message_id": "ngnX6kMdoZrEoAoy0aHhDU",
+      "local_path": "project-files/history/midnight12/bot/engine.mjs",
+      "bytes": 7242,
+      "sha256": "1608d216dea8347e16d266083caa94cccb79510a7febf86f4e292fc46722c266"
+    },
+    {
+      "filename": "001_player_progress.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/001_player_progress.sql",
+      "version_uid": "0f795f61-40b5-4fd1-8b59-912a47064372",
+      "source_message_id": "1yp9Wx0V63ySLkMbaUrCUg",
+      "local_path": "project-files/history/midnight12/bot/migrations/001_player_progress__0f795f61.sql",
+      "bytes": 999,
+      "sha256": "cb71b4f28cfb60b63d85bbe880fadfde206082667cf657bccf58dbffc20e5491"
+    },
+    {
+      "filename": "001_player_progress.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/001_player_progress.sql",
+      "version_uid": "33bbb1b5-c621-42dc-989c-7f6f3e901d46",
+      "source_message_id": "3Q9GiFlpBZBYUWOs233Bjy",
+      "local_path": "project-files/history/midnight12/bot/migrations/001_player_progress__33bbb1b5.sql",
+      "bytes": 999,
+      "sha256": "cb71b4f28cfb60b63d85bbe880fadfde206082667cf657bccf58dbffc20e5491"
+    },
+    {
+      "filename": "001_player_progress.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/001_player_progress.sql",
+      "version_uid": "45cf7fbf-35a5-4029-80dc-bca89bc3cd36",
+      "source_message_id": "h6MAe4ldWVI9unk1UP2aBS",
+      "local_path": "project-files/history/midnight12/bot/migrations/001_player_progress__45cf7fbf.sql",
+      "bytes": 999,
+      "sha256": "cb71b4f28cfb60b63d85bbe880fadfde206082667cf657bccf58dbffc20e5491"
+    },
+    {
+      "filename": "001_player_progress.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/001_player_progress.sql",
+      "version_uid": "73465a12-bd75-43e9-823e-fa244f48fee5",
+      "source_message_id": "mKuZbF2T5GT5gWgsvjwztG",
+      "local_path": "project-files/history/midnight12/bot/migrations/001_player_progress.sql",
+      "bytes": 999,
+      "sha256": "cb71b4f28cfb60b63d85bbe880fadfde206082667cf657bccf58dbffc20e5491"
+    },
+    {
+      "filename": "002_bot_rls.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/002_bot_rls.sql",
+      "version_uid": "0b0ea804-889e-441d-8cdb-f1c3062c4f32",
+      "source_message_id": "1yp9Wx0V63ySLkMbaUrCUg",
+      "local_path": "project-files/history/midnight12/bot/migrations/002_bot_rls__0b0ea804.sql",
+      "bytes": 1218,
+      "sha256": "9e7265d32147bca18bdcb7be91808ab4fab8ca1953995c71b411b4e21efedd3d"
+    },
+    {
+      "filename": "002_bot_rls.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/002_bot_rls.sql",
+      "version_uid": "2577f52a-7fe4-4c64-8c8c-19c8c6d90374",
+      "source_message_id": "hR6oQgIF0xNpP9NypLiEYf",
+      "local_path": "project-files/history/midnight12/bot/migrations/002_bot_rls__2577f52a.sql",
+      "bytes": 1218,
+      "sha256": "9e7265d32147bca18bdcb7be91808ab4fab8ca1953995c71b411b4e21efedd3d"
+    },
+    {
+      "filename": "002_bot_rls.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/002_bot_rls.sql",
+      "version_uid": "a663b3d2-bcb7-41be-8da7-e0175809e185",
+      "source_message_id": "P1HhL6HvmlQYiJIkS45p8O",
+      "local_path": "project-files/history/midnight12/bot/migrations/002_bot_rls__a663b3d2.sql",
+      "bytes": 1218,
+      "sha256": "9e7265d32147bca18bdcb7be91808ab4fab8ca1953995c71b411b4e21efedd3d"
+    },
+    {
+      "filename": "002_bot_rls.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/002_bot_rls.sql",
+      "version_uid": "b1ed16d8-9def-482e-9947-429f107f9b38",
+      "source_message_id": "vU17NmsLl6vE6HyMrOxU2G",
+      "local_path": "project-files/history/midnight12/bot/migrations/002_bot_rls__b1ed16d8.sql",
+      "bytes": 1218,
+      "sha256": "9e7265d32147bca18bdcb7be91808ab4fab8ca1953995c71b411b4e21efedd3d"
+    },
+    {
+      "filename": "002_bot_rls.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/002_bot_rls.sql",
+      "version_uid": "70d1a43d-ca82-4f55-9c69-44aab3b66345",
+      "source_message_id": "IcTf24q5zneKtphwddK6aa",
+      "local_path": "project-files/history/midnight12/bot/migrations/002_bot_rls.sql",
+      "bytes": 1218,
+      "sha256": "9e7265d32147bca18bdcb7be91808ab4fab8ca1953995c71b411b4e21efedd3d"
+    },
+    {
+      "filename": "002_bot_rls.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/002_bot_rls.sql",
+      "version_uid": "4c85b683-f44e-48cf-bd4d-615235a3e9ed",
+      "source_message_id": "5xK7WeUY0H5ml5xk1UFKtD",
+      "local_path": "project-files/history/midnight12/bot/migrations/002_bot_rls.sql",
+      "bytes": 1218,
+      "sha256": "9e7265d32147bca18bdcb7be91808ab4fab8ca1953995c71b411b4e21efedd3d"
+    },
+    {
+      "filename": "003_bot_app_role.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/migrations/003_bot_app_role.sql",
+      "version_uid": "baf53fd7-bbc6-4874-8eb8-4857ecb666a9",
+      "source_message_id": "CLKlYWjqoRWlvmIx5Guc87",
+      "local_path": "project-files/history/midnight12/bot/migrations/003_bot_app_role.sql",
+      "bytes": 1949,
+      "sha256": "4dff95e23b4e336c019b291c601dc6da47abc700fdd1085b8d9c7d9f9a9e7177"
+    },
+    {
+      "filename": "package.json",
+      "content_type": "application/json",
+      "original_path": "/home/ubuntu/midnight12/bot/package.json",
+      "version_uid": "9843fbc3-9052-4720-b5de-fcfeeb8f2bde",
+      "source_message_id": "CLKlYWjqoRWlvmIx5Guc87",
+      "local_path": "project-files/history/midnight12/bot/package.json",
+      "bytes": 410,
+      "sha256": "2173367e403ba507228d2eb84fb5bb79e5d2aa28dd4dfa95620721cf7ecf16de"
+    },
+    {
+      "filename": "progress-store.mjs",
+      "content_type": "text/javascript; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/bot/progress-store.mjs",
+      "version_uid": "3076cb2f-2c19-4ff2-ad32-ca5a1fd9b6ed",
+      "source_message_id": "mKuZbF2T5GT5gWgsvjwztG",
+      "local_path": "project-files/history/midnight12/bot/progress-store.mjs",
+      "bytes": 5130,
+      "sha256": "7a44c5a9b4adbaf5ad6324c15b6c936a5303b59179deaeb6b7bc03dacfa1d466"
+    },
+    {
+      "filename": "README.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/bot/README.md",
+      "version_uid": "98228ed6-81bc-4deb-bc34-5405b7692ab8",
+      "source_message_id": "mKuZbF2T5GT5gWgsvjwztG",
+      "local_path": "project-files/history/midnight12/bot/README__98228ed6.md",
+      "bytes": 4762,
+      "sha256": "71363c0491f1cc4647b62a62f5a3223e0fc56cd70aa6a770be670cfbc19ce639"
+    },
+    {
+      "filename": "README.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/bot/README.md",
+      "version_uid": "dc849f5a-cbf7-46e5-849d-b80b85e4de0c",
+      "source_message_id": "CLKlYWjqoRWlvmIx5Guc87",
+      "local_path": "project-files/history/midnight12/bot/README__dc849f5a.md",
+      "bytes": 9467,
+      "sha256": "c39ae7dc5bf777daf54528252c5470c46ea62fbe1346aa589649bc96ded434b4"
+    },
+    {
+      "filename": "README.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/bot/README.md",
+      "version_uid": "26e93749-002e-41f0-bdec-3dd8ced35d63",
+      "source_message_id": "ngnX6kMdoZrEoAoy0aHhDU",
+      "local_path": "project-files/history/midnight12/bot/README.md",
+      "bytes": 3278,
+      "sha256": "7e92259ae359c118f67138d453dcd230afc4f58b095096c243c6f5b0410dd665"
+    },
+    {
+      "filename": "live-supabase-smoke.mjs",
+      "content_type": "text/javascript; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/bot/scripts/live-supabase-smoke.mjs",
+      "version_uid": "2024f056-6a55-46d9-911b-74c04ebcfee4",
+      "source_message_id": "1yp9Wx0V63ySLkMbaUrCUg",
+      "local_path": "project-files/history/midnight12/bot/scripts/live-supabase-smoke.mjs",
+      "bytes": 4897,
+      "sha256": "5047028ed0c378d4706847edf2b6f8280e1373168703f4a3a1e7843e47f3bf6f"
+    },
+    {
+      "filename": "test-rls-roles.sql",
+      "content_type": "application/sql",
+      "original_path": "/home/ubuntu/midnight12/bot/scripts/test-rls-roles.sql",
+      "version_uid": "eabe07a8-b82e-4e91-a798-4b489ba72806",
+      "source_message_id": "CLKlYWjqoRWlvmIx5Guc87",
+      "local_path": "project-files/history/midnight12/bot/scripts/test-rls-roles.sql",
+      "bytes": 6769,
+      "sha256": "5f9adfa740da26b21b4f094a85fe73a1fd9806b77f29321898858f47cc145f9f"
+    },
+    {
+      "filename": "engine.test.mjs",
+      "content_type": "text/javascript; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/bot/test/engine.test.mjs",
+      "version_uid": "52ddf5fc-e616-4cc8-aa45-9031f209cd5e",
+      "source_message_id": "hR6oQgIF0xNpP9NypLiEYf",
+      "local_path": "project-files/history/midnight12/bot/test/engine.test__52ddf5fc.mjs",
+      "bytes": 9610,
+      "sha256": "8b98c0a638f6960389aa619e66b0c5ffa25f34108d728bed47bfe77c7deb3477"
+    },
+    {
+      "filename": "engine.test.mjs",
+      "content_type": "text/javascript; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/bot/test/engine.test.mjs",
+      "version_uid": "585736d7-812c-4829-8419-0d956cb8ba5c",
+      "source_message_id": "mKuZbF2T5GT5gWgsvjwztG",
+      "local_path": "project-files/history/midnight12/bot/test/engine.test.mjs",
+      "bytes": 9610,
+      "sha256": "8b98c0a638f6960389aa619e66b0c5ffa25f34108d728bed47bfe77c7deb3477"
+    },
+    {
+      "filename": "run-live-supabase.ps1",
+      "content_type": "application/x-powershell",
+      "original_path": "/home/ubuntu/midnight12/bot/test/run-live-supabase.ps1",
+      "version_uid": "1887c70d-c819-436e-92bf-c919d5293a88",
+      "source_message_id": "1yp9Wx0V63ySLkMbaUrCUg",
+      "local_path": "project-files/history/midnight12/bot/test/run-live-supabase.ps1",
+      "bytes": 883,
+      "sha256": "ba8b6e84812b343b0291969f09f8705b924f8d6699ee671edd8e7c998e8850cf"
+    },
+    {
+      "filename": "cases-01-03.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/content/cases-01-03.md",
+      "version_uid": "52da29a1-51d4-4d5f-a0e7-c6100329ccec",
+      "source_message_id": "OIS1mFsaYNzP2s6MrgfUEL",
+      "local_path": "project-files/history/midnight12/content/cases-01-03.md",
+      "bytes": 14649,
+      "sha256": "e4cfbb5b8267b4ef4523fa51f568df63e8f1674040dd0285998266d54f60cf95"
+    },
+    {
+      "filename": "cases-01-12.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/content/cases-01-12.md",
+      "version_uid": "f29927c2-369b-49c5-8de2-57848459baae",
+      "source_message_id": "Da9QbQywH3ATLEzsNRyV5e",
+      "local_path": "project-files/history/midnight12/content/cases-01-12.md",
+      "bytes": 36737,
+      "sha256": "46d0acaf1990193fd8a6062929aa4fa00e0ce42411a68b957c6c59e44cad10b2"
+    },
+    {
+      "filename": "render-cards.py",
+      "content_type": "text/x-python; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/content/evidence/render-cards.py",
+      "version_uid": "f55b2e69-73af-4473-a0d8-86dacb82a126",
+      "source_message_id": "ngnX6kMdoZrEoAoy0aHhDU",
+      "local_path": "project-files/history/midnight12/content/evidence/render-cards.py",
+      "bytes": 1086,
+      "sha256": "a8d77bb9cbb5bab7b7287209ce7d138de6af27fd1366eb5b8d08cf0c98ad0914"
+    },
+    {
+      "filename": "telegram-cards.html",
+      "content_type": "text/html; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/content/evidence/telegram-cards.html",
+      "version_uid": "b2e1e6a3-184c-440b-8621-c05f7e5d23ca",
+      "source_message_id": "ngnX6kMdoZrEoAoy0aHhDU",
+      "local_path": "project-files/history/midnight12/content/evidence/telegram-cards.html",
+      "bytes": 13020,
+      "sha256": "6034586ef0595bcc36ff58bc083441c76aebf7730ae3266dcad85a551d369d5a"
+    },
+    {
+      "filename": "case-01-evidence.png",
+      "content_type": "image/png",
+      "original_path": "/home/ubuntu/midnight12/public/evidence/case-01-evidence.png",
+      "version_uid": "a13086f9-af27-483f-adf3-7bbdf3b62c5c",
+      "source_message_id": "ngnX6kMdoZrEoAoy0aHhDU",
+      "local_path": "project-files/history/midnight12/public/evidence/case-01-evidence.png",
+      "bytes": 330732,
+      "sha256": "f891eaa22c2a1514ddc19dfc4e432665a22097a6d3aff24b2d2ed6ae89783d81"
+    },
+    {
+      "filename": "case-02-evidence.png",
+      "content_type": "image/png",
+      "original_path": "/home/ubuntu/midnight12/public/evidence/case-02-evidence.png",
+      "version_uid": "5423f56c-d918-40c4-8d77-1caff299de06",
+      "source_message_id": "ngnX6kMdoZrEoAoy0aHhDU",
+      "local_path": "project-files/history/midnight12/public/evidence/case-02-evidence.png",
+      "bytes": 280294,
+      "sha256": "5fd31b663ebab75e75bae9e4e2e04ff10d94aac753e859a7e0ed9a91e2b8a3cf"
+    },
+    {
+      "filename": "case-03-evidence.png",
+      "content_type": "image/png",
+      "original_path": "/home/ubuntu/midnight12/public/evidence/case-03-evidence.png",
+      "version_uid": "7f04d99f-92e9-47de-ad5d-f0ac9daa89a7",
+      "source_message_id": "ngnX6kMdoZrEoAoy0aHhDU",
+      "local_path": "project-files/history/midnight12/public/evidence/case-03-evidence.png",
+      "bytes": 477899,
+      "sha256": "4f3b9422f0d02667c06a24d5f6bea3a2d03ce6e238429b9cec808e195d2d7f21"
+    },
+    {
+      "filename": "TODO.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "original_path": "/home/ubuntu/midnight12/TODO.md",
+      "version_uid": "9e6199a4-7c5a-4b5c-8c47-0370de175608",
+      "source_message_id": "mKuZbF2T5GT5gWgsvjwztG",
+      "local_path": "project-files/history/midnight12/TODO.md",
+      "bytes": 5164,
+      "sha256": "b27f641dfa92647e9270018d9369433e4b7d2e590105ac12a910e94fa9f2e15c"
+    }
+  ],
+  "errors": []
+}

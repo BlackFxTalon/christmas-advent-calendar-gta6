@@ -1,0 +1,18 @@
+<slide id="implementation_plan">
+  <background color="background"/>
+  <shape type="rect" x="0" y="0" width="1280" height="8" fill="accent"/>
+  <text id="plan-title" x="60" y="60" width="900" height="60" font="heading" size="38" color="primary"><p>Порядок реализации</p></text>
+  <text x="60" y="124" width="1000" height="34" font="body" size="21" color="secondary-text"><p>Четыре шага переводят прототип в проверяемую production-систему.</p></text>
+  <image id="plan-calendar" x="60" y="190" width="260" height="325" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-calendar-d0bfb4b367b0.jpg" fit="cover"/>
+  <image id="plan-data" x="360" y="190" width="260" height="325" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-data-mapping-e24a8c3ccb65.jpg" fit="cover"/>
+  <image id="plan-archive" x="660" y="190" width="260" height="325" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-archive-folders-69f10c88bb07.jpg" fit="cover"/>
+  <image id="plan-tests" x="960" y="190" width="260" height="325" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-testing-bench-c6cc27688612.jpg" fit="cover"/>
+  <text x="60" y="535" width="260" height="100" font="body" size="20" color="body-text"><p><strong color="primary">01 · Календарь</strong></p><p>Дела 4–12 и даты 20–31.</p></text>
+  <text x="360" y="535" width="260" height="100" font="body" size="20" color="body-text"><p><strong color="primary">02 · Контент</strong></p><p>evidence[] и answerType time.</p></text>
+  <text x="660" y="535" width="260" height="100" font="body" size="20" color="body-text"><p><strong color="primary">03 · Архив</strong></p><p>callbacks, editMessage, 005.</p></text>
+  <text x="960" y="535" width="260" height="100" font="body" size="20" color="body-text"><p><strong color="accent-text">04 · Доказательство</strong></p><p>12-кейсный симулятор и HTTP/Supabase тест.</p></text>
+  <shape type="line" x="320" y="352" width="40" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="line" x="620" y="352" width="40" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="line" x="920" y="352" width="40" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <text x="1160" y="680" width="70" height="24" font="caption" size="15" color="secondary-text" align="right"><p>08</p></text>
+</slide>

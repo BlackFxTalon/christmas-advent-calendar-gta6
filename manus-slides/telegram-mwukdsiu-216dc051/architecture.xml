@@ -1,0 +1,26 @@
+<slide id="architecture">
+  <background color="background"/>
+  <shape type="rect" x="0" y="0" width="1280" height="8" fill="accent"/>
+  <image id="architecture-strip" x="0" y="0" width="180" height="720" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/arch-server-rack-5bb4082e40ff.jpg" fit="cover"/>
+  <shape type="rect" x="180" y="0" width="1100" height="720" fill="#F1F6F8E6"/>
+  <text id="architecture-title" x="240" y="60" width="900" height="60" font="heading" size="38" color="primary"><p>Слои системы и поток обновления</p></text>
+  <text id="architecture-subtitle" x="240" y="124" width="900" height="36" font="body" size="21" color="secondary-text"><p>Транзакция фиксирует состояние до внешнего dispatch в Telegram.</p></text>
+  <shape type="rect" x="240" y="210" width="175" height="130" corner-radius="8" fill="surface" stroke="primary" stroke-width="2"/>
+  <shape type="rect" x="460" y="210" width="175" height="130" corner-radius="8" fill="surface" stroke="primary" stroke-width="2"/>
+  <shape type="rect" x="680" y="210" width="175" height="130" corner-radius="8" fill="surface" stroke="primary" stroke-width="2"/>
+  <shape type="rect" x="900" y="210" width="175" height="130" corner-radius="8" fill="surface" stroke="primary" stroke-width="2"/>
+  <shape type="rect" x="1120" y="210" width="120" height="130" corner-radius="8" fill="primary"/>
+  <shape type="line" x="415" y="275" width="45" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="line" x="635" y="275" width="45" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="line" x="855" y="275" width="45" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="line" x="1075" y="275" width="45" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <text x="240" y="210" width="175" height="130" font="body" size="20" color="body-text" align="center" anchor="middle"><p><strong color="primary">Telegram</strong></p><p>Webhook</p></text>
+  <text x="460" y="210" width="175" height="130" font="body" size="20" color="body-text" align="center" anchor="middle"><p><strong color="primary">server.mjs</strong></p><p>секрет · JSON</p></text>
+  <text x="680" y="210" width="175" height="130" font="body" size="20" color="body-text" align="center" anchor="middle"><p><strong color="primary">processUpdate</strong></p><p>receipt · tx</p></text>
+  <text x="900" y="210" width="175" height="130" font="body" size="20" color="body-text" align="center" anchor="middle"><p><strong color="primary">engine.mjs</strong></p><p>update → actions</p></text>
+  <text x="1120" y="210" width="120" height="130" font="body" size="19" color="#FFFFFF" align="center" anchor="middle"><p><strong>Bot API</strong></p><p>dispatch</p></text>
+  <shape type="rect" x="460" y="430" width="615" height="120" corner-radius="8" fill="surface" stroke="divider" stroke-width="2"/>
+  <text x="485" y="452" width="560" height="80" font="code" size="18" color="body-text"><p>BEGIN → lock update_id → engine → COMMIT</p><p>                         ↓</p><p>              dispatch → mark delivered</p></text>
+  <text id="architecture-note" x="240" y="610" width="900" height="44" font="body" size="22" color="accent-text"><p><strong>Вывод:</strong> Telegraf не нужен — чистые actions сохраняют контроль над транзакцией.</p></text>
+  <text x="1160" y="680" width="70" height="24" font="caption" size="15" color="secondary-text" align="right"><p>03</p></text>
+</slide>

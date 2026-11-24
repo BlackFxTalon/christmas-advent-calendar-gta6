@@ -1,0 +1,16 @@
+<slide id="archive_states">
+  <background color="background"/>
+  <shape type="rect" x="0" y="0" width="1280" height="8" fill="accent"/>
+  <image id="archive-image" x="880" y="150" width="340" height="510" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/archive-cabinet-1a34bba7a51a.jpg" fit="cover"/>
+  <text id="archive-title" x="60" y="60" width="1160" height="60" font="heading" size="38" color="primary"><p>Архив: навигация и состояния</p></text>
+  <text x="60" y="132" width="780" height="42" font="body" size="21" color="secondary-text"><p>/archive · Все / В работе / Решённые · по 6 дел на страницу</p></text>
+  <shape type="rect" x="60" y="205" width="760" height="105" corner-radius="8" fill="surface" stroke="divider" stroke-width="2"/>
+  <text x="85" y="225" width="710" height="70" font="body" size="21" color="body-text"><p><strong color="primary">Дело</strong> · locked → open → solved</p><p>bot_case_progress: нет строки → in_progress → completed</p></text>
+  <shape type="line" x="250" y="330" width="130" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="line" x="520" y="330" width="130" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <text x="60" y="350" width="760" height="30" font="caption" size="17" color="secondary-text"><p>locked                 open                    solved</p></text>
+  <shape type="rect" x="60" y="430" width="760" height="105" corner-radius="8" fill="surface" stroke="divider" stroke-width="2"/>
+  <text x="85" y="450" width="710" height="70" font="body" size="21" color="body-text"><p><strong color="primary">Улика</strong> · unseen → viewed</p><p>bot_evidence_views хранит факт первого просмотра.</p></text>
+  <text x="60" y="575" width="760" height="66" font="code" size="18" color="accent-text"><p>callback_data: ar:l · ar:c · ar:e</p><p>доступ перепроверяется по БД</p></text>
+  <text x="1160" y="680" width="70" height="24" font="caption" size="15" color="secondary-text" align="right"><p>05</p></text>
+</slide>

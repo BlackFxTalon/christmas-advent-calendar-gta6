@@ -1,0 +1,198 @@
+{
+  "id": "telegram-mwukdsiu-216dc051",
+  "title": "Архитектура интерактивного детектива в Telegram",
+  "designType": "deck",
+  "resourceUri": "manus-resource://manus-slides/deck/telegram-mwukdsiu-216dc051",
+  "widgetUri": "manus-widget://manus-slides/studio/deck/telegram-mwukdsiu-216dc051",
+  "versionId": "v-mwukmyr2-5c0b57a9",
+  "projectDir": "D:\\projects\\christmas-advent-calendar-gta6\\manus-slides\\telegram-mwukdsiu-216dc051",
+  "activeFile": "implementation_plan.xml",
+  "files": [
+    {
+      "path": "design.xml",
+      "mimeType": "text/xml",
+      "title": "design.xml",
+      "content": "<design>\n  <size width=\"1280\" height=\"720\"></size>\n  <color name=\"primary\" value=\"#0C4A7A\"/>\n  <color name=\"body-text\" value=\"#15232F\"/>\n  <color name=\"secondary-text\" value=\"#4A5A6A\"/>\n  <color name=\"background\" value=\"#F1F6F8\"/>\n  <color name=\"surface\" value=\"#E5EBED\"/>\n  <color name=\"divider\" value=\"#D0D9DF\"/>\n  <color name=\"accent\" value=\"#DA6D5D\"/>\n  <color name=\"accent-text\" value=\"#B93C2A\"/>\n  <font name=\"display\" family=\"Source Serif 4\" size=\"58\"/>\n  <font name=\"heading\" family=\"Source Serif 4\" size=\"38\"/>\n  <font name=\"body\" family=\"Source Sans 3\" size=\"22\"/>\n  <font name=\"data\" family=\"Source Sans 3\" size=\"22\"/>\n  <font name=\"caption\" family=\"Source Sans 3\" size=\"16\"/>\n  <font name=\"code\" family=\"JetBrains Mono\" size=\"18\"/>\n</design>"
+    },
+    {
+      "path": "cover.xml",
+      "mimeType": "text/xml",
+      "title": "cover.xml",
+      "content": "<slide id=\"cover\">\n  <background color=\"background\"/>\n  <shape type=\"rect\" x=\"0\" y=\"0\" width=\"1280\" height=\"8\" fill=\"accent\"/>\n  <image id=\"cover-image\" x=\"0\" y=\"272\" width=\"1280\" height=\"448\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/cover-clock-blueprint-dd244acfe9f6.jpg\" fit=\"cover\"/>\n  <shape type=\"rect\" x=\"0\" y=\"272\" width=\"1280\" height=\"448\" fill=\"#0C4A7ACC\"/>\n  <text id=\"cover-title\" x=\"60\" y=\"330\" width=\"1120\" height=\"100\" font=\"display\" size=\"58\" color=\"#FFFFFF\" autofit=\"shrink\"><p>Архитектура интерактивного детектива в Telegram</p></text>\n  <text id=\"cover-subtitle\" x=\"60\" y=\"450\" width=\"900\" height=\"50\" font=\"body\" size=\"26\" color=\"#FFFFFF\"><p>Как сценарные данные, webhook и архив улик собираются в игровой цикл</p></text>\n  <shape type=\"line\" x=\"60\" y=\"535\" width=\"180\" height=\"0\" stroke=\"accent\" stroke-width=\"4\"/>\n  <text id=\"cover-meta\" x=\"60\" y=\"560\" width=\"900\" height=\"40\" font=\"caption\" size=\"18\" color=\"#FFFFFF\"><p>«12 дней до полуночи» · Верде-Бей · 12 дел · 20–31 декабря</p></text>\n</slide>"
+    },
+    {
+      "path": "player_flow.xml",
+      "mimeType": "text/xml",
+      "title": "player_flow.xml",
+      "content": "<slide id=\"player_flow\">\n  <background color=\"background\"/>\n  <shape type=\"rect\" x=\"0\" y=\"0\" width=\"1280\" height=\"8\" fill=\"accent\"/>\n  <text id=\"flow-title\" x=\"60\" y=\"60\" width=\"900\" height=\"60\" font=\"heading\" size=\"38\" color=\"primary\"><p>Игровой цикл игрока</p></text>\n  <text id=\"flow-lead\" x=\"60\" y=\"124\" width=\"1040\" height=\"38\" font=\"body\" size=\"22\" color=\"secondary-text\"><p>Дата открывает дело, ответ меняет состояние, а архив сохраняет найденное.</p></text>\n  <image id=\"flow-phone\" x=\"60\" y=\"216\" width=\"260\" height=\"195\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-phone-08fbc6f4cbfd.jpg\" fit=\"cover\"/>\n  <image id=\"flow-case\" x=\"360\" y=\"216\" width=\"260\" height=\"195\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-case-file-e0929b317d98.jpg\" fit=\"cover\"/>\n  <image id=\"flow-clue\" x=\"660\" y=\"216\" width=\"260\" height=\"195\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-clue-85b9e210b4aa.jpg\" fit=\"cover\"/>\n  <image id=\"flow-archive\" x=\"960\" y=\"216\" width=\"260\" height=\"195\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-archive-box-8b14248ede52.jpg\" fit=\"cover\"/>\n  <shape type=\"line\" x=\"320\" y=\"314\" width=\"40\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"line\" x=\"620\" y=\"314\" width=\"40\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"line\" x=\"920\" y=\"314\" width=\"40\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <text id=\"flow-step-1\" x=\"60\" y=\"440\" width=\"260\" height=\"126\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">01 · /today</strong></p><p>Календарь выдаёт дело по дате.</p></text>\n  <text id=\"flow-step-2\" x=\"360\" y=\"440\" width=\"260\" height=\"126\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">02 · Дело</strong></p><p>Игрок читает вводную и улику.</p></text>\n  <text id=\"flow-step-3\" x=\"660\" y=\"440\" width=\"260\" height=\"126\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">03 · Ответ</strong></p><p>Подсказки помогают, ошибка не блокирует.</p></text>\n  <text id=\"flow-step-4\" x=\"960\" y=\"440\" width=\"260\" height=\"126\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">04 · Архив</strong></p><p>Пройденное дело остаётся доступным.</p></text>\n  <text id=\"flow-footer\" x=\"60\" y=\"640\" width=\"1160\" height=\"32\" font=\"caption\" size=\"16\" color=\"secondary-text\"><p>Reply на сообщение дела связывает ответ с конкретным case_id.</p></text>\n</slide>"
+    },
+    {
+      "path": "architecture.xml",
+      "mimeType": "text/xml",
+      "title": "architecture.xml",
+      "content": "<slide id=\"architecture\">\n  <background color=\"background\"/>\n  <shape type=\"rect\" x=\"0\" y=\"0\" width=\"1280\" height=\"8\" fill=\"accent\"/>\n  <image id=\"architecture-strip\" x=\"0\" y=\"0\" width=\"180\" height=\"720\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/arch-server-rack-5bb4082e40ff.jpg\" fit=\"cover\"/>\n  <shape type=\"rect\" x=\"180\" y=\"0\" width=\"1100\" height=\"720\" fill=\"#F1F6F8E6\"/>\n  <text id=\"architecture-title\" x=\"240\" y=\"60\" width=\"900\" height=\"60\" font=\"heading\" size=\"38\" color=\"primary\"><p>Слои системы и поток обновления</p></text>\n  <text id=\"architecture-subtitle\" x=\"240\" y=\"124\" width=\"900\" height=\"36\" font=\"body\" size=\"21\" color=\"secondary-text\"><p>Транзакция фиксирует состояние до внешнего dispatch в Telegram.</p></text>\n  <shape type=\"rect\" x=\"240\" y=\"210\" width=\"175\" height=\"130\" corner-radius=\"8\" fill=\"surface\" stroke=\"primary\" stroke-width=\"2\"/>\n  <shape type=\"rect\" x=\"460\" y=\"210\" width=\"175\" height=\"130\" corner-radius=\"8\" fill=\"surface\" stroke=\"primary\" stroke-width=\"2\"/>\n  <shape type=\"rect\" x=\"680\" y=\"210\" width=\"175\" height=\"130\" corner-radius=\"8\" fill=\"surface\" stroke=\"primary\" stroke-width=\"2\"/>\n  <shape type=\"rect\" x=\"900\" y=\"210\" width=\"175\" height=\"130\" corner-radius=\"8\" fill=\"surface\" stroke=\"primary\" stroke-width=\"2\"/>\n  <shape type=\"rect\" x=\"1120\" y=\"210\" width=\"120\" height=\"130\" corner-radius=\"8\" fill=\"primary\"/>\n  <shape type=\"line\" x=\"415\" y=\"275\" width=\"45\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"line\" x=\"635\" y=\"275\" width=\"45\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"line\" x=\"855\" y=\"275\" width=\"45\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"line\" x=\"1075\" y=\"275\" width=\"45\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <text x=\"240\" y=\"210\" width=\"175\" height=\"130\" font=\"body\" size=\"20\" color=\"body-text\" align=\"center\" anchor=\"middle\"><p><strong color=\"primary\">Telegram</strong></p><p>Webhook</p></text>\n  <text x=\"460\" y=\"210\" width=\"175\" height=\"130\" font=\"body\" size=\"20\" color=\"body-text\" align=\"center\" anchor=\"middle\"><p><strong color=\"primary\">server.mjs</strong></p><p>секрет · JSON</p></text>\n  <text x=\"680\" y=\"210\" width=\"175\" height=\"130\" font=\"body\" size=\"20\" color=\"body-text\" align=\"center\" anchor=\"middle\"><p><strong color=\"primary\">processUpdate</strong></p><p>receipt · tx</p></text>\n  <text x=\"900\" y=\"210\" width=\"175\" height=\"130\" font=\"body\" size=\"20\" color=\"body-text\" align=\"center\" anchor=\"middle\"><p><strong color=\"primary\">engine.mjs</strong></p><p>update → actions</p></text>\n  <text x=\"1120\" y=\"210\" width=\"120\" height=\"130\" font=\"body\" size=\"19\" color=\"#FFFFFF\" align=\"center\" anchor=\"middle\"><p><strong>Bot API</strong></p><p>dispatch</p></text>\n  <shape type=\"rect\" x=\"460\" y=\"430\" width=\"615\" height=\"120\" corner-radius=\"8\" fill=\"surface\" stroke=\"divider\" stroke-width=\"2\"/>\n  <text x=\"485\" y=\"452\" width=\"560\" height=\"80\" font=\"code\" size=\"18\" color=\"body-text\"><p>BEGIN → lock update_id → engine → COMMIT</p><p>                         ↓</p><p>              dispatch → mark delivered</p></text>\n  <text id=\"architecture-note\" x=\"240\" y=\"610\" width=\"900\" height=\"44\" font=\"body\" size=\"22\" color=\"accent-text\"><p><strong>Вывод:</strong> Telegraf не нужен — чистые actions сохраняют контроль над транзакцией.</p></text>\n  <text x=\"1160\" y=\"680\" width=\"70\" height=\"24\" font=\"caption\" size=\"15\" color=\"secondary-text\" align=\"right\"><p>03</p></text>\n</slide>"
+    },
+    {
+      "path": "scenario_data.xml",
+      "mimeType": "text/xml",
+      "title": "scenario_data.xml",
+      "content": "<slide id=\"scenario_data\">\n  <background color=\"background\"/>\n  <shape type=\"rect\" x=\"0\" y=\"0\" width=\"1280\" height=\"8\" fill=\"accent\"/>\n  <image id=\"scenario-image\" x=\"0\" y=\"0\" width=\"720\" height=\"720\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/scenario-index-cards-49fa1ddf3275.jpg\" fit=\"cover\"/>\n  <shape type=\"rect\" x=\"720\" y=\"0\" width=\"560\" height=\"720\" fill=\"#F1F6F8E6\"/>\n  <text id=\"scenario-title\" x=\"780\" y=\"72\" width=\"440\" height=\"74\" font=\"heading\" size=\"36\" color=\"primary\"><p>Сценарная карта как данные</p></text>\n  <shape type=\"rect\" x=\"780\" y=\"180\" width=\"440\" height=\"105\" corner-radius=\"8\" fill=\"surface\"/>\n  <text x=\"800\" y=\"195\" width=\"400\" height=\"85\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">Контент · cases.mjs</strong></p><p>Неизменяемый пакет: даты, промпты, улики, подсказки, ответы.</p></text>\n  <shape type=\"line\" x=\"1000\" y=\"285\" width=\"0\" height=\"45\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"rect\" x=\"780\" y=\"330\" width=\"440\" height=\"105\" corner-radius=\"8\" fill=\"surface\"/>\n  <text x=\"800\" y=\"345\" width=\"400\" height=\"85\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">Состояние · PostgreSQL</strong></p><p>Игрок, прогресс по делу, receipts и просмотренные улики.</p></text>\n  <text x=\"780\" y=\"475\" width=\"440\" height=\"34\" font=\"body\" size=\"20\" color=\"accent-text\"><p><strong>Поля дела</strong></p></text>\n  <text x=\"780\" y=\"515\" width=\"440\" height=\"160\" font=\"code\" size=\"18\" color=\"body-text\"><p>date · prompt · evidence[]</p><p>hints[3] · answerType</p><p>answers · traps</p><p>correct / incorrect / next</p></text>\n  <text x=\"1160\" y=\"680\" width=\"70\" height=\"24\" font=\"caption\" size=\"15\" color=\"secondary-text\" align=\"right\"><p>04</p></text>\n</slide>"
+    },
+    {
+      "path": "archive_states.xml",
+      "mimeType": "text/xml",
+      "title": "archive_states.xml",
+      "content": "<slide id=\"archive_states\">\n  <background color=\"background\"/>\n  <shape type=\"rect\" x=\"0\" y=\"0\" width=\"1280\" height=\"8\" fill=\"accent\"/>\n  <image id=\"archive-image\" x=\"880\" y=\"150\" width=\"340\" height=\"510\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/archive-cabinet-1a34bba7a51a.jpg\" fit=\"cover\"/>\n  <text id=\"archive-title\" x=\"60\" y=\"60\" width=\"1160\" height=\"60\" font=\"heading\" size=\"38\" color=\"primary\"><p>Архив: навигация и состояния</p></text>\n  <text x=\"60\" y=\"132\" width=\"780\" height=\"42\" font=\"body\" size=\"21\" color=\"secondary-text\"><p>/archive · Все / В работе / Решённые · по 6 дел на страницу</p></text>\n  <shape type=\"rect\" x=\"60\" y=\"205\" width=\"760\" height=\"105\" corner-radius=\"8\" fill=\"surface\" stroke=\"divider\" stroke-width=\"2\"/>\n  <text x=\"85\" y=\"225\" width=\"710\" height=\"70\" font=\"body\" size=\"21\" color=\"body-text\"><p><strong color=\"primary\">Дело</strong> · locked → open → solved</p><p>bot_case_progress: нет строки → in_progress → completed</p></text>\n  <shape type=\"line\" x=\"250\" y=\"330\" width=\"130\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"line\" x=\"520\" y=\"330\" width=\"130\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <text x=\"60\" y=\"350\" width=\"760\" height=\"30\" font=\"caption\" size=\"17\" color=\"secondary-text\"><p>locked                 open                    solved</p></text>\n  <shape type=\"rect\" x=\"60\" y=\"430\" width=\"760\" height=\"105\" corner-radius=\"8\" fill=\"surface\" stroke=\"divider\" stroke-width=\"2\"/>\n  <text x=\"85\" y=\"450\" width=\"710\" height=\"70\" font=\"body\" size=\"21\" color=\"body-text\"><p><strong color=\"primary\">Улика</strong> · unseen → viewed</p><p>bot_evidence_views хранит факт первого просмотра.</p></text>\n  <text x=\"60\" y=\"575\" width=\"760\" height=\"66\" font=\"code\" size=\"18\" color=\"accent-text\"><p>callback_data: ar:l · ar:c · ar:e</p><p>доступ перепроверяется по БД</p></text>\n  <text x=\"1160\" y=\"680\" width=\"70\" height=\"24\" font=\"caption\" size=\"15\" color=\"secondary-text\" align=\"right\"><p>05</p></text>\n</slide>"
+    },
+    {
+      "path": "case_08.xml",
+      "mimeType": "text/xml",
+      "title": "case_08.xml",
+      "content": "<slide id=\"case_08\">\n  <background color=\"background\"/>\n  <shape type=\"rect\" x=\"0\" y=\"0\" width=\"1280\" height=\"8\" fill=\"accent\"/>\n  <image id=\"case08-image\" x=\"0\" y=\"0\" width=\"480\" height=\"720\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/case08-pocket-watch-7f19b083b62b.jpg\" fit=\"cover\"/>\n  <shape type=\"rect\" x=\"480\" y=\"0\" width=\"800\" height=\"720\" fill=\"#F1F6F8F2\"/>\n  <text id=\"case08-title\" x=\"540\" y=\"60\" width=\"680\" height=\"68\" font=\"heading\" size=\"36\" color=\"primary\"><p>Карта дела №08 · «Четыре минуты»</p></text>\n  <text x=\"540\" y=\"138\" width=\"640\" height=\"34\" font=\"body\" size=\"20\" color=\"secondary-text\"><p>Выдача 27 декабря · ответ типа чч:мм</p></text>\n  <shape type=\"rect\" x=\"540\" y=\"195\" width=\"640\" height=\"72\" corner-radius=\"6\" fill=\"surface\"/>\n  <text x=\"560\" y=\"210\" width=\"600\" height=\"52\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">H-3:</strong> камера показывает 23:42, но отстаёт на 4 минуты.</p></text>\n  <text x=\"540\" y=\"305\" width=\"640\" height=\"220\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">01 · Улика</strong> — кадр камеры H-3.</p><p><strong color=\"primary\">02 · Подсказка 1</strong> — сравнить часы и запись.</p><p><strong color=\"primary\">03 · Подсказка 2</strong> — прибавить ровно 4 минуты.</p><p><strong color=\"primary\">04 · Подсказка 3</strong> — ответ не является временем кадра.</p><p><strong color=\"accent-text\">05 · Валидация</strong> — 23:46; 23:42 и 23:38 ловушки.</p><p><strong color=\"primary\">06 · Переход</strong> — дело №09, ворота 23:51:10.</p></text>\n  <shape type=\"line\" x=\"540\" y=\"575\" width=\"640\" height=\"0\" stroke=\"divider\" stroke-width=\"2\"/>\n  <text x=\"540\" y=\"600\" width=\"640\" height=\"65\" font=\"caption\" size=\"17\" color=\"secondary-text\"><p>Ошибка формата не засчитывается. Кадр опровергает часть алиби,</p><p>но сам по себе не доказывает вину.</p></text>\n  <text x=\"1160\" y=\"680\" width=\"70\" height=\"24\" font=\"caption\" size=\"15\" color=\"secondary-text\" align=\"right\"><p>06</p></text>\n</slide>"
+    },
+    {
+      "path": "data_and_safety.xml",
+      "mimeType": "text/xml",
+      "title": "data_and_safety.xml",
+      "content": "<slide id=\"data_and_safety\">\n  <background color=\"background\"/>\n  <shape type=\"rect\" x=\"0\" y=\"0\" width=\"1280\" height=\"8\" fill=\"accent\"/>\n  <text id=\"safety-title\" x=\"380\" y=\"56\" width=\"520\" height=\"66\" font=\"heading\" size=\"38\" color=\"primary\" align=\"center\"><p>Прогресс, безопасность и тестирование</p></text>\n  <image id=\"safety-vault\" x=\"150\" y=\"136\" width=\"400\" height=\"500\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/safety-vault-door-c8015bcea03f.jpg\" fit=\"cover\"/>\n  <image id=\"safety-tests\" x=\"730\" y=\"136\" width=\"400\" height=\"500\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/safety-test-sheet-01095eaf027b.jpg\" fit=\"cover\"/>\n  <shape type=\"rect\" x=\"60\" y=\"150\" width=\"70\" height=\"470\" fill=\"#F1F6F8CC\"/>\n  <shape type=\"rect\" x=\"600\" y=\"150\" width=\"70\" height=\"470\" fill=\"#F1F6F8CC\"/>\n  <text x=\"70\" y=\"230\" width=\"50\" height=\"260\" font=\"body\" size=\"19\" color=\"primary\" writing-mode=\"vertical\" align=\"center\"><p>УЖЕ ЕСТЬ</p></text>\n  <text x=\"610\" y=\"230\" width=\"50\" height=\"260\" font=\"body\" size=\"19\" color=\"accent-text\" writing-mode=\"vertical\" align=\"center\"><p>СЛЕДУЮЩИЙ ШАГ</p></text>\n  <text x=\"250\" y=\"656\" width=\"200\" height=\"32\" font=\"caption\" size=\"17\" color=\"primary\" align=\"center\"><p>Граница данных</p></text>\n  <text x=\"830\" y=\"656\" width=\"200\" height=\"32\" font=\"caption\" size=\"17\" color=\"accent-text\" align=\"center\"><p>Проверка контура</p></text>\n  <text x=\"60\" y=\"680\" width=\"1160\" height=\"24\" font=\"caption\" size=\"15\" color=\"secondary-text\"><p>PostgreSQL/Supabase · bot_app без DELETE и DDL · RLS · receipts по update_id · 16 unit-тестов · 8 тестов прототипа</p></text>\n</slide>"
+    },
+    {
+      "path": "implementation_plan.xml",
+      "mimeType": "text/xml",
+      "title": "implementation_plan.xml",
+      "content": "<slide id=\"implementation_plan\">\n  <background color=\"background\"/>\n  <shape type=\"rect\" x=\"0\" y=\"0\" width=\"1280\" height=\"8\" fill=\"accent\"/>\n  <text id=\"plan-title\" x=\"60\" y=\"60\" width=\"900\" height=\"60\" font=\"heading\" size=\"38\" color=\"primary\"><p>Порядок реализации</p></text>\n  <text x=\"60\" y=\"124\" width=\"1000\" height=\"34\" font=\"body\" size=\"21\" color=\"secondary-text\"><p>Четыре шага переводят прототип в проверяемую production-систему.</p></text>\n  <image id=\"plan-calendar\" x=\"60\" y=\"190\" width=\"260\" height=\"325\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-calendar-d0bfb4b367b0.jpg\" fit=\"cover\"/>\n  <image id=\"plan-data\" x=\"360\" y=\"190\" width=\"260\" height=\"325\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-data-mapping-e24a8c3ccb65.jpg\" fit=\"cover\"/>\n  <image id=\"plan-archive\" x=\"660\" y=\"190\" width=\"260\" height=\"325\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-archive-folders-69f10c88bb07.jpg\" fit=\"cover\"/>\n  <image id=\"plan-tests\" x=\"960\" y=\"190\" width=\"260\" height=\"325\" src=\"D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-testing-bench-c6cc27688612.jpg\" fit=\"cover\"/>\n  <text x=\"60\" y=\"535\" width=\"260\" height=\"100\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">01 · Календарь</strong></p><p>Дела 4–12 и даты 20–31.</p></text>\n  <text x=\"360\" y=\"535\" width=\"260\" height=\"100\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">02 · Контент</strong></p><p>evidence[] и answerType time.</p></text>\n  <text x=\"660\" y=\"535\" width=\"260\" height=\"100\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"primary\">03 · Архив</strong></p><p>callbacks, editMessage, 005.</p></text>\n  <text x=\"960\" y=\"535\" width=\"260\" height=\"100\" font=\"body\" size=\"20\" color=\"body-text\"><p><strong color=\"accent-text\">04 · Доказательство</strong></p><p>12-кейсный симулятор и HTTP/Supabase тест.</p></text>\n  <shape type=\"line\" x=\"320\" y=\"352\" width=\"40\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"line\" x=\"620\" y=\"352\" width=\"40\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <shape type=\"line\" x=\"920\" y=\"352\" width=\"40\" height=\"0\" stroke=\"accent\" stroke-width=\"4\" arrow-end=\"arrow\"/>\n  <text x=\"1160\" y=\"680\" width=\"70\" height=\"24\" font=\"caption\" size=\"15\" color=\"secondary-text\" align=\"right\"><p>08</p></text>\n</slide>"
+    }
+  ],
+  "scaffolds": [],
+  "viewState": {
+    "mode": "preview",
+    "zoom": 1,
+    "slide_ids": [
+      "cover",
+      "player_flow",
+      "architecture",
+      "scenario_data",
+      "archive_states",
+      "case_08",
+      "data_and_safety",
+      "implementation_plan"
+    ],
+    "outline": [
+      {
+        "id": "cover",
+        "title": "Интерактивный детектив в Telegram",
+        "summary": "Заглавие: архитектура игрового бота, архива улик и сценарного движка проекта «12 дней до полуночи». Мета: Верде-Бей · 12 дел · 20–31 декабря. [заголовок, 1 подзаголовок, 1 мета-строка]",
+        "state": "edited"
+      },
+      {
+        "id": "player_flow",
+        "title": "Игровой цикл игрока",
+        "summary": "Путь: /today выдаёт дело по календарю → игрок изучает улики (сообщение + фото-карточка) → берёт подсказки 1–3 кнопками → отвечает reply на сообщение дела → прогресс сохраняется, дело попадает в /archive. Отметить: дела выдаются по дате, ошибка не блокирует. [4 этапа, каждый с коротким пояснением]",
+        "state": "edited"
+      },
+      {
+        "id": "architecture",
+        "title": "Слои системы и поток обновления",
+        "summary": "Telegram webhook → server.mjs (секрет, разбор JSON) → processUpdate: транзакция + receipt по update_id → engine.mjs: чистая функция update → actions → PostgreSQL/Supabase progress store; после COMMIT dispatch отправляет actions в Telegram Bot API и markUpdateDelivered. Telegraf не используется: он дублировал бы маршрутизацию и обходил транзакцию. [5 узлов и связи, 1 вывод]",
+        "state": "edited"
+      },
+      {
+        "id": "scenario_data",
+        "title": "Сценарная карта как данные",
+        "summary": "Два слоя: контент (cases.mjs — неизменяемый, в репозитории) и состояние игрока (БД). Поля дела: date, prompt, evidence[], hints[3], answerType + answers + traps, correct/incorrect/summary, next. [2 слоя данных и 7 полей дела]",
+        "state": "edited"
+      },
+      {
+        "id": "archive_states",
+        "title": "Архив: навигация и состояния",
+        "summary": "Меню /archive: фильтры Все / В работе / Решённые, пагинация по 6, дело → улика → назад. Состояние дела вычисляется из bot_case_progress: locked (нет строки) → open (in_progress) → solved (completed); улика unseen → viewed (bot_evidence_views). callback_data ar:l / ar:c / ar:e ≤ 64 байт, доступ перепроверяется по БД. [2 state machine и 1 схема меню]",
+        "state": "edited"
+      },
+      {
+        "id": "case_08",
+        "title": "Карта дела №08 · «Четыре минуты»",
+        "summary": "Выдача 27 декабря; улика H-3: 23:42, камера отстаёт на 4 минуты; три ступени подсказок; строгий разбор чч:мм; ответ 23:46; ловушки 23:42 и 23:38 с отдельным текстом; ошибка формата не засчитывается; переход к делу №09 (кадр ворот 23:51:10). Ограничение: кадр опровергает часть алиби, но не доказывает вину. [6 шагов и 3 подсказки]",
+        "state": "edited"
+      },
+      {
+        "id": "data_and_safety",
+        "title": "Прогресс, безопасность и тестирование",
+        "summary": "Уже есть: PostgreSQL/Supabase, роль bot_app без DELETE и DDL, RLS с запретом для anon/authenticated, receipts по update_id, 16 unit-тестов и симулятор для дел 1–3. Прототип архива: 8 тестов проходят. Следующий шаг: таблица bot_evidence_views, editMessage в dispatch, HTTP-интеграционный тест webhook с mock Telegram и откатом. [2 колонки: уже есть / следующий шаг]",
+        "state": "edited"
+      },
+      {
+        "id": "implementation_plan",
+        "title": "Порядок реализации",
+        "summary": "1) Перенести дела 4–12 в cases.mjs и расширить календарь до 20–31 декабря. 2) Разбить материалы на evidence[], добавить answerType time. 3) Подключить архив: команда, callback, editMessage, миграция 005. 4) Тесты, симулятор 12 дел и HTTP/Supabase тест. [4 этапа с критерием готовности]",
+        "state": "edited"
+      }
+    ],
+    "generate_mode": "pptx",
+    "isPptxSlides": true,
+    "deck_topic": "education",
+    "assets": {
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/cover-clock-blueprint-dd244acfe9f6.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/dd244acfe9f64d57288b7f6e37b9b965346cdef68adb9a65d92501d22863fc95.jpg",
+        "sha256": "dd244acfe9f64d57288b7f6e37b9b965346cdef68adb9a65d92501d22863fc95"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-phone-08fbc6f4cbfd.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/08fbc6f4cbfd4951f7f2c685fdcca26f44b0385120a6a3c456b7de6ef7a830d9.jpg",
+        "sha256": "08fbc6f4cbfd4951f7f2c685fdcca26f44b0385120a6a3c456b7de6ef7a830d9"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-case-file-e0929b317d98.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/e0929b317d98fa38103f631b18168d7741abbaa6ff538c0659f8e2e0f0cfeb9c.jpg",
+        "sha256": "e0929b317d98fa38103f631b18168d7741abbaa6ff538c0659f8e2e0f0cfeb9c"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-clue-85b9e210b4aa.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/85b9e210b4aac363083caf01e2814042c59f8386609d4dfe434043b227b1123f.jpg",
+        "sha256": "85b9e210b4aac363083caf01e2814042c59f8386609d4dfe434043b227b1123f"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-archive-box-8b14248ede52.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/8b14248ede52ccc8ed1e335e7e850de7e406943e3a7b88a8fac14f7a51f1bc3e.jpg",
+        "sha256": "8b14248ede52ccc8ed1e335e7e850de7e406943e3a7b88a8fac14f7a51f1bc3e"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/arch-server-rack-5bb4082e40ff.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/5bb4082e40ffdff4a8d252a6e182d30ef6dacfe3b30c0373f391aecb28a9dcb0.jpg",
+        "sha256": "5bb4082e40ffdff4a8d252a6e182d30ef6dacfe3b30c0373f391aecb28a9dcb0"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/scenario-index-cards-49fa1ddf3275.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/49fa1ddf3275032470ef99410a8b80ab20947cbf850a0c5363a0610a59e7ac4e.jpg",
+        "sha256": "49fa1ddf3275032470ef99410a8b80ab20947cbf850a0c5363a0610a59e7ac4e"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/archive-cabinet-1a34bba7a51a.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/1a34bba7a51ad69265642f7f911e4d63677ab217fa74dad390386d27f6184d92.jpg",
+        "sha256": "1a34bba7a51ad69265642f7f911e4d63677ab217fa74dad390386d27f6184d92"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/case08-pocket-watch-7f19b083b62b.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/7f19b083b62b90ceb8ba3fb70496a98e7d75c9cac82d8006b3986e7d6a343d50.jpg",
+        "sha256": "7f19b083b62b90ceb8ba3fb70496a98e7d75c9cac82d8006b3986e7d6a343d50"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/safety-vault-door-c8015bcea03f.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/c8015bcea03f870ea8de40348b12357181aeef33ab2972c2c844156181ce1bac.jpg",
+        "sha256": "c8015bcea03f870ea8de40348b12357181aeef33ab2972c2c844156181ce1bac"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/safety-test-sheet-01095eaf027b.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/01095eaf027b0a7a937ce51d30ace6642e968bb5a6b701c5aae0c9e81d84afb6.jpg",
+        "sha256": "01095eaf027b0a7a937ce51d30ace6642e968bb5a6b701c5aae0c9e81d84afb6"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-calendar-d0bfb4b367b0.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/d0bfb4b367b094fdf440f0bd418ea1ae5a49317f6e86462e2da3445ae446f1e9.jpg",
+        "sha256": "d0bfb4b367b094fdf440f0bd418ea1ae5a49317f6e86462e2da3445ae446f1e9"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-data-mapping-e24a8c3ccb65.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/e24a8c3ccb659dc482bfd0697cbe36f81915b58c821e0c3b118ee9e61aa17e4b.jpg",
+        "sha256": "e24a8c3ccb659dc482bfd0697cbe36f81915b58c821e0c3b118ee9e61aa17e4b"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-archive-folders-69f10c88bb07.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/69f10c88bb07c75d069041284f76b44022f3be4f096ab2299b58d07a2c326bd3.jpg",
+        "sha256": "69f10c88bb07c75d069041284f76b44022f3be4f096ab2299b58d07a2c326bd3"
+      },
+      "D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/plan-testing-bench-c6cc27688612.jpg": {
+        "key": "slide-assets/sub_j3XfiSbzduo9oRuhucVHJh-V1HW-fyQahsYFs0lTOQLdFnwQcqorRBWuiPGj3y5JKhL8p9jpnTCc/telegram-mwukdsiu-216dc051/c6cc27688612c32c1a19af01751a7a37a7608d6db93da2e68692921335cee21a.jpg",
+        "sha256": "c6cc27688612c32c1a19af01751a7a37a7608d6db93da2e68692921335cee21a"
+      }
+    }
+  },
+  "createdAt": "2026-11-24T10:41:05.958Z",
+  "updatedAt": "2026-11-24T10:48:14.369Z"
+}

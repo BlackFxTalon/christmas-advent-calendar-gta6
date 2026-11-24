@@ -1,0 +1,19 @@
+{
+  "name": "12-days-telegram-bot",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "start:local": "node --env-file=.env server.mjs",
+    "migrate": "node migrate.mjs",
+    "test": "node --test",
+    "simulate": "node scripts/simulator.mjs"
+  },
+  "dependencies": {
+    "pg": "8.23.1"
+  }
+}

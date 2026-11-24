@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12 дней до полуночи — preview карточек</title>
+  <style>
+    :root{--ink:#071820;--paper:#f1eadb;--pink:#ff4e86;--teal:#39ded6;--gold:#e8bd75;--mono:'DM Mono','Consolas',monospace;--display:'Oswald','Arial Narrow',Arial,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font-family:Arial,sans-serif;padding:32px}
+    header{max-width:1280px;margin:0 auto 28px;border-bottom:1px solid rgba(241,234,219,.16);padding-bottom:22px}
+    .eyebrow{color:var(--teal);font:12px var(--mono);letter-spacing:.14em;text-transform:uppercase}.eyebrow span{color:var(--pink)}
+    h1{font:500 clamp(42px,6vw,76px)/.98 var(--display);text-transform:uppercase;margin:18px 0 10px}h1 em{color:var(--pink);font-style:normal}
+    p{color:#aab8b3;font:14px/1.7 Arial,sans-serif}.grid{max-width:1280px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;align-items:start}
+    figure{margin:0;background:#0b222b;border:1px solid rgba(57,222,214,.35);padding:14px;box-shadow:0 20px 60px #02090d70}figure img{display:block;width:100%;height:auto}figcaption{padding:12px 3px 2px;color:var(--teal);font:11px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+    @media(max-width:620px){body{padding:18px}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><div class="eyebrow"><span>VERDE BAY</span> / CASE FILES / <span>LIVE PREVIEW</span></div><h1>Карточки <em>улик.</em></h1><p>Локальный preview-архив для проверки материалов Telegram-бота. Откройте карточку, чтобы рассмотреть её в полном размере.</p></header>
+  <main class="grid">
+    <script>
+      for (let i=1;i<=12;i++) { const n=String(i).padStart(2,'0'); document.write(`<figure><img src="evidence/case-${n}-evidence.png" alt="Карточка улики дела ${n}"><figcaption>Дело №${n} · evidence card</figcaption></figure>`); }
+    </script>
+  </main>
+</body>
+</html>

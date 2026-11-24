@@ -1,0 +1,15 @@
+<slide id="scenario_data">
+  <background color="background"/>
+  <shape type="rect" x="0" y="0" width="1280" height="8" fill="accent"/>
+  <image id="scenario-image" x="0" y="0" width="720" height="720" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/scenario-index-cards-49fa1ddf3275.jpg" fit="cover"/>
+  <shape type="rect" x="720" y="0" width="560" height="720" fill="#F1F6F8E6"/>
+  <text id="scenario-title" x="780" y="72" width="440" height="74" font="heading" size="36" color="primary"><p>Сценарная карта как данные</p></text>
+  <shape type="rect" x="780" y="180" width="440" height="105" corner-radius="8" fill="surface"/>
+  <text x="800" y="195" width="400" height="85" font="body" size="20" color="body-text"><p><strong color="primary">Контент · cases.mjs</strong></p><p>Неизменяемый пакет: даты, промпты, улики, подсказки, ответы.</p></text>
+  <shape type="line" x="1000" y="285" width="0" height="45" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="rect" x="780" y="330" width="440" height="105" corner-radius="8" fill="surface"/>
+  <text x="800" y="345" width="400" height="85" font="body" size="20" color="body-text"><p><strong color="primary">Состояние · PostgreSQL</strong></p><p>Игрок, прогресс по делу, receipts и просмотренные улики.</p></text>
+  <text x="780" y="475" width="440" height="34" font="body" size="20" color="accent-text"><p><strong>Поля дела</strong></p></text>
+  <text x="780" y="515" width="440" height="160" font="code" size="18" color="body-text"><p>date · prompt · evidence[]</p><p>hints[3] · answerType</p><p>answers · traps</p><p>correct / incorrect / next</p></text>
+  <text x="1160" y="680" width="70" height="24" font="caption" size="15" color="secondary-text" align="right"><p>04</p></text>
+</slide>

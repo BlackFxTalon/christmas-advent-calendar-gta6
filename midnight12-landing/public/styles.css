@@ -1,0 +1,2 @@
+
+.footer__legal{display:flex;flex-wrap:wrap;gap:12px 16px}.footer__legal a{font:400 8px var(--mono);letter-spacing:.06em;color:#809396;text-decoration:underline;text-underline-offset:3px}.footer__legal a:hover{color:var(--teal)}@media(max-width:760px){.footer__legal{grid-column:1 / -1;gap:10px}.footer__legal a{font-size:7px}}

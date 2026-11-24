@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12 дней до полуночи — карточки улик 01–03</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f4f2ec;
+      --muted: #a9b3bd;
+      --panel: #0d1118;
+      --line: rgba(107, 243, 220, .34);
+      --cyan: #6bf3dc;
+      --amber: #ffbd68;
+      --red: #ff6578;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      background: #07090e;
+      color: var(--ink);
+      font-family: Arial, "Noto Sans", sans-serif;
+    }
+    .evidence-card {
+      width: 540px;
+      max-width: 100%;
+      overflow: hidden;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(107,243,220,.055), transparent 34%),
+        radial-gradient(ellipse at 100% 0%, rgba(255,101,120,.09), transparent 38%),
+        var(--panel);
+      box-shadow: 0 18px 60px rgba(0,0,0,.38);
+    }
+    .topline, .footline, .mono, .label, .stamp, .record, .code, .map-code {
+      font-family: "Courier New", monospace;
+      letter-spacing: .045em;
+    }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255,255,255,.14);
+      color: var(--cyan);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .case-number {
+      flex: 0 0 auto;
+      color: var(--red);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 22px 0 8px;
+      font-size: 26px;
+      line-height: 1.08;
+      letter-spacing: .025em;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      line-height: 1.45;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .panel {
+      margin-top: 14px;
+      padding: 17px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 12px;
+      background: rgba(0,0,0,.22);
+    }
+    .panel-title, .label {
+      margin: 0 0 12px;
+      color: var(--amber);
+      font-size: 11px;
+      line-height: 1.4;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .record {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: baseline;
+      gap: 8px 16px;
+      padding: 8px 0;
+      border-bottom: 1px dashed rgba(255,255,255,.12);
+      font-size: 14px;
+    }
+    .record:last-child { border-bottom: 0; }
+    .record span:first-child { color: var(--muted); }
+    .record strong { color: var(--ink); font-weight: 700; text-align: right; }
+    .callout {
+      margin-top: 13px;
+      padding: 11px 12px;
+      border-left: 3px solid var(--cyan);
+      background: rgba(107,243,220,.07);
+      color: var(--ink);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .callout.alert { border-color: var(--red); background: rgba(255,101,120,.07); }
+    .receipt {
+      position: relative;
+      padding: 19px;
+      border-radius: 4px;
+      background: #eee9dc;
+      color: #10131a;
+      font-family: "Courier New", monospace;
+      box-shadow: 0 7px 20px rgba(0,0,0,.24);
+    }
+    .receipt::after {
+      content: "";
+      position: absolute;
+      right: 0; left: 0; bottom: -6px;
+      height: 7px;
+      background: linear-gradient(135deg, #eee9dc 50%, transparent 51%) 0 0 / 12px 12px repeat-x;
+    }
+    .receipt-head { text-align: center; font-size: 14px; font-weight: 700; letter-spacing: .09em; }
+    .receipt-sub { margin-top: 4px; text-align: center; font-size: 10px; }
+    .receipt-line { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; font-size: 12px; }
+    .receipt-rule { margin-top: 12px; border-top: 1px dashed #41454b; }
+    .receipt-time { margin-top: 16px; text-align: center; font-size: 12px; font-weight: 700; }
+    .receipt-takeout { margin-top: 12px; text-align: center; font-size: 11px; letter-spacing: .08em; }
+    .morse-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .morse-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; }
+    .morse-row { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-bottom: 1px dotted rgba(255,255,255,.12); font: 11px "Courier New", monospace; }
+    .morse-row strong { color: var(--cyan); }
+    .map-list { display: grid; gap: 8px; }
+    .map-entry { display: grid; grid-template-columns: 52px 1fr; gap: 10px; align-items: start; padding: 9px 10px; border: 1px solid rgba(255,255,255,.11); border-radius: 8px; }
+    .map-code { color: var(--cyan); font-weight: 700; }
+    .map-desc { color: var(--muted); font-size: 12px; line-height: 1.45; }
+    .footline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 20px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,.13);
+      color: #7d8a96;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+    @media (max-width: 580px) {
+      body { padding: 10px; }
+      .evidence-card { padding: 20px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <article class="evidence-card" id="case-01">
+    <div class="topline"><span>Verde Bay · Case file / 19 Dec</span><span class="case-number">01</span></div>
+    <h1>Пять минут тишины</h1>
+    <p class="subtitle">Приложение A · журнал и примечание техника</p>
+    <section class="panel">
+      <p class="panel-title">Выгрузка музыкального сервера · San-Sol</p>
+      <div class="record"><span>Трек</span><strong>Slow Heat</strong></div>
+      <div class="record"><span>Исполнитель</span><strong>Sol Rivas Trio</strong></div>
+      <div class="record"><span>Длительность</span><strong>05:05</strong></div>
+      <div class="record"><span>Последняя нота</span><strong>23:36:00</strong></div>
+      <div class="record"><span>Воспроизведение</span><strong>без пауз и перемотки</strong></div>
+    </section>
+    <section class="panel">
+      <p class="panel-title">Примечание техника · автоответчик</p>
+      <div class="callout">В записи слышен полный фрагмент <em>Slow Heat</em> — от первого звука до последней ноты.</div>
+      <div class="callout alert">В конце — механическое отключение записи. Между музыкой и обрывом паузы нет.</div>
+    </section>
+    <div class="footline"><span>Архив: San-Sol / sound log</span><span>Время местное</span></div>
+  </article>
+
+  <article class="evidence-card" id="case-02">
+    <div class="topline"><span>Verde Bay · Case file / 19 Dec</span><span class="case-number">02</span></div>
+    <h1>Часы спешат</h1>
+    <p class="subtitle">Приложение B · чек и журнал смены</p>
+    <section class="panel">
+      <p class="panel-title">Кассовый чек · копия клиента</p>
+      <div class="receipt">
+        <div class="receipt-head">SAN-SOL</div>
+        <div class="receipt-sub">КОПИЯ КЛИЕНТА</div>
+        <div class="receipt-line"><span>Эспрессо, без сахара</span><span>1</span></div>
+        <div class="receipt-line"><span>Декаф, мёд</span><span>1</span></div>
+        <div class="receipt-rule"></div>
+        <div class="receipt-takeout">ОДИН НА ВЫНОС</div>
+        <div class="receipt-time">ВРЕМЯ ТЕРМИНАЛА: 23:44</div>
+      </div>
+    </section>
+    <section class="panel">
+      <p class="panel-title">Журнал смены · сверка часов</p>
+      <div class="record"><span>Время марины</span><strong>23:50</strong></div>
+      <div class="record"><span>Время терминала</span><strong>23:57</strong></div>
+      <div class="callout">Кассовый терминал спешит на 7 минут. Поправку применять ко всем чекам смены.</div>
+    </section>
+    <div class="footline"><span>San-Sol / terminal copy</span><span>Clock offset: +07 min</span></div>
+  </article>
+
+  <article class="evidence-card" id="case-03">
+    <div class="topline"><span>Verde Bay · Marina archive / 19 Dec</span><span class="case-number">03</span></div>
+    <h1>Два сигнала</h1>
+    <p class="subtitle">Приложение C · журнал, легенда и схема причалов</p>
+    <section class="panel">
+      <p class="panel-title">Журнал световых передач</p>
+      <div class="record"><span>Время</span><strong>23:48:12</strong></div>
+      <div class="record"><span>Команда</span><strong>ПОВТОРИТЬ СИГНАЛ</strong></div>
+      <div class="record"><span>Код Морзе</span><strong class="mono">-... / ..---</strong></div>
+      <div class="record"><span>Статус</span><strong>ОТВЕТА НЕТ</strong></div>
+      <div class="callout">Косая черта разделяет символы. Точки и тире читать по международной азбуке Морзе.</div>
+    </section>
+    <section class="panel">
+      <p class="panel-title">Краткая таблица Морзе · международный код</p>
+      <div class="morse-layout">
+        <div class="morse-grid">
+          <div class="morse-row"><strong>A</strong><span>.-</span></div><div class="morse-row"><strong>N</strong><span>-.</span></div>
+          <div class="morse-row"><strong>B</strong><span>-...</span></div><div class="morse-row"><strong>O</strong><span>---</span></div>
+          <div class="morse-row"><strong>C</strong><span>-.-.</span></div><div class="morse-row"><strong>P</strong><span>.--.</span></div>
+          <div class="morse-row"><strong>D</strong><span>-..</span></div><div class="morse-row"><strong>Q</strong><span>--.-</span></div>
+          <div class="morse-row"><strong>E</strong><span>.</span></div><div class="morse-row"><strong>R</strong><span>.-.</span></div>
+          <div class="morse-row"><strong>F</strong><span>..-.</span></div><div class="morse-row"><strong>S</strong><span>...</span></div>
+          <div class="morse-row"><strong>G</strong><span>--.</span></div><div class="morse-row"><strong>T</strong><span>-</span></div>
+          <div class="morse-row"><strong>H</strong><span>....</span></div><div class="morse-row"><strong>U</strong><span>..-</span></div>
+          <div class="morse-row"><strong>I</strong><span>..</span></div><div class="morse-row"><strong>V</strong><span>...-</span></div>
+          <div class="morse-row"><strong>J</strong><span>.---</span></div><div class="morse-row"><strong>W</strong><span>.--</span></div>
+          <div class="morse-row"><strong>K</strong><span>-.-</span></div><div class="morse-row"><strong>X</strong><span>-..-</span></div>
+          <div class="morse-row"><strong>L</strong><span>.-..</span></div><div class="morse-row"><strong>Y</strong><span>-.--</span></div>
+          <div class="morse-row"><strong>M</strong><span>--</span></div><div class="morse-row"><strong>Z</strong><span>--..</span></div>
+        </div>
+        <div class="morse-grid">
+          <div class="morse-row"><strong>1</strong><span>.----</span></div><div class="morse-row"><strong>6</strong><span>-....</span></div>
+          <div class="morse-row"><strong>2</strong><span>..---</span></div><div class="morse-row"><strong>7</strong><span>--...</span></div>
+          <div class="morse-row"><strong>3</strong><span>...--</span></div><div class="morse-row"><strong>8</strong><span>---..</span></div>
+          <div class="morse-row"><strong>4</strong><span>....-</span></div><div class="morse-row"><strong>9</strong><span>----.</span></div>
+          <div class="morse-row"><strong>5</strong><span>.....</span></div><div class="morse-row"><strong>0</strong><span>-----</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="panel">
+      <p class="panel-title">Схема причалов</p>
+      <div class="map-list">
+        <div class="map-entry"><div class="map-code">A-1</div><div class="map-desc">Главный пассажирский пирс</div></div>
+        <div class="map-entry"><div class="map-code">B-2</div><div class="map-desc">Старый служебный причал у маяка</div></div>
+        <div class="map-entry"><div class="map-code">C-3</div><div class="map-desc">Паромная рампа</div></div>
+      </div>
+    </section>
+    <div class="footline"><span>Marina / signal archive</span><span>Отправитель не подтверждён</span></div>
+  </article>
+</body>
+</html>

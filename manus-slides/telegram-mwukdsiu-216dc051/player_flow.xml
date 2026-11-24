@@ -1,0 +1,18 @@
+<slide id="player_flow">
+  <background color="background"/>
+  <shape type="rect" x="0" y="0" width="1280" height="8" fill="accent"/>
+  <text id="flow-title" x="60" y="60" width="900" height="60" font="heading" size="38" color="primary"><p>Игровой цикл игрока</p></text>
+  <text id="flow-lead" x="60" y="124" width="1040" height="38" font="body" size="22" color="secondary-text"><p>Дата открывает дело, ответ меняет состояние, а архив сохраняет найденное.</p></text>
+  <image id="flow-phone" x="60" y="216" width="260" height="195" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-phone-08fbc6f4cbfd.jpg" fit="cover"/>
+  <image id="flow-case" x="360" y="216" width="260" height="195" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-case-file-e0929b317d98.jpg" fit="cover"/>
+  <image id="flow-clue" x="660" y="216" width="260" height="195" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-clue-85b9e210b4aa.jpg" fit="cover"/>
+  <image id="flow-archive" x="960" y="216" width="260" height="195" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/step-archive-box-8b14248ede52.jpg" fit="cover"/>
+  <shape type="line" x="320" y="314" width="40" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="line" x="620" y="314" width="40" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <shape type="line" x="920" y="314" width="40" height="0" stroke="accent" stroke-width="4" arrow-end="arrow"/>
+  <text id="flow-step-1" x="60" y="440" width="260" height="126" font="body" size="20" color="body-text"><p><strong color="primary">01 · /today</strong></p><p>Календарь выдаёт дело по дате.</p></text>
+  <text id="flow-step-2" x="360" y="440" width="260" height="126" font="body" size="20" color="body-text"><p><strong color="primary">02 · Дело</strong></p><p>Игрок читает вводную и улику.</p></text>
+  <text id="flow-step-3" x="660" y="440" width="260" height="126" font="body" size="20" color="body-text"><p><strong color="primary">03 · Ответ</strong></p><p>Подсказки помогают, ошибка не блокирует.</p></text>
+  <text id="flow-step-4" x="960" y="440" width="260" height="126" font="body" size="20" color="body-text"><p><strong color="primary">04 · Архив</strong></p><p>Пройденное дело остаётся доступным.</p></text>
+  <text id="flow-footer" x="60" y="640" width="1160" height="32" font="caption" size="16" color="secondary-text"><p>Reply на сообщение дела связывает ответ с конкретным case_id.</p></text>
+</slide>

@@ -1,0 +1,10 @@
+<slide id="cover">
+  <background color="background"/>
+  <shape type="rect" x="0" y="0" width="1280" height="8" fill="accent"/>
+  <image id="cover-image" x="0" y="272" width="1280" height="448" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/cover-clock-blueprint-dd244acfe9f6.jpg" fit="cover"/>
+  <shape type="rect" x="0" y="272" width="1280" height="448" fill="#0C4A7ACC"/>
+  <text id="cover-title" x="60" y="330" width="1120" height="100" font="display" size="58" color="#FFFFFF" autofit="shrink"><p>Архитектура интерактивного детектива в Telegram</p></text>
+  <text id="cover-subtitle" x="60" y="450" width="900" height="50" font="body" size="26" color="#FFFFFF"><p>Как сценарные данные, webhook и архив улик собираются в игровой цикл</p></text>
+  <shape type="line" x="60" y="535" width="180" height="0" stroke="accent" stroke-width="4"/>
+  <text id="cover-meta" x="60" y="560" width="900" height="40" font="caption" size="18" color="#FFFFFF"><p>«12 дней до полуночи» · Верде-Бей · 12 дел · 20–31 декабря</p></text>
+</slide>

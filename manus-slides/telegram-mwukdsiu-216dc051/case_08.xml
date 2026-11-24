@@ -1,0 +1,14 @@
+<slide id="case_08">
+  <background color="background"/>
+  <shape type="rect" x="0" y="0" width="1280" height="8" fill="accent"/>
+  <image id="case08-image" x="0" y="0" width="480" height="720" src="D:/projects/christmas-advent-calendar-gta6/manus-slides/telegram-mwukdsiu-216dc051/assets/generated/case08-pocket-watch-7f19b083b62b.jpg" fit="cover"/>
+  <shape type="rect" x="480" y="0" width="800" height="720" fill="#F1F6F8F2"/>
+  <text id="case08-title" x="540" y="60" width="680" height="68" font="heading" size="36" color="primary"><p>Карта дела №08 · «Четыре минуты»</p></text>
+  <text x="540" y="138" width="640" height="34" font="body" size="20" color="secondary-text"><p>Выдача 27 декабря · ответ типа чч:мм</p></text>
+  <shape type="rect" x="540" y="195" width="640" height="72" corner-radius="6" fill="surface"/>
+  <text x="560" y="210" width="600" height="52" font="body" size="20" color="body-text"><p><strong color="primary">H-3:</strong> камера показывает 23:42, но отстаёт на 4 минуты.</p></text>
+  <text x="540" y="305" width="640" height="220" font="body" size="20" color="body-text"><p><strong color="primary">01 · Улика</strong> — кадр камеры H-3.</p><p><strong color="primary">02 · Подсказка 1</strong> — сравнить часы и запись.</p><p><strong color="primary">03 · Подсказка 2</strong> — прибавить ровно 4 минуты.</p><p><strong color="primary">04 · Подсказка 3</strong> — ответ не является временем кадра.</p><p><strong color="accent-text">05 · Валидация</strong> — 23:46; 23:42 и 23:38 ловушки.</p><p><strong color="primary">06 · Переход</strong> — дело №09, ворота 23:51:10.</p></text>
+  <shape type="line" x="540" y="575" width="640" height="0" stroke="divider" stroke-width="2"/>
+  <text x="540" y="600" width="640" height="65" font="caption" size="17" color="secondary-text"><p>Ошибка формата не засчитывается. Кадр опровергает часть алиби,</p><p>но сам по себе не доказывает вину.</p></text>
+  <text x="1160" y="680" width="70" height="24" font="caption" size="15" color="secondary-text" align="right"><p>06</p></text>
+</slide>
