@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bot:
+    name: Bot tests and simulation
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: midnight12-bot/bot
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: midnight12-bot/bot/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run unit and integration tests
+        run: pnpm test
+
+      - name: Run all-case simulator
+        run: pnpm run simulate:all
+
+      - name: Report checked commit
+        if: always()
+        run: |
+          echo "Checked commit: $GITHUB_SHA"
+          echo "Branch/ref: $GITHUB_REF"
+          git status --short
